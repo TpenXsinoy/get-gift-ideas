@@ -11,43 +11,6 @@ const openai = new OpenAI({
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
-// const getConversation = (userMessage) => {
-//   const conversation = [];
-
-//   if (!userMessage) {
-//     // Initial prompt
-//     conversation.push({
-//       role: "assistant",
-//       content: "What is the occasion for the gift?",
-//     });
-//   } else {
-//     // User response handling based on previous questions
-//     conversation.push({ role: "user", content: userMessage });
-
-//     // Add logic here to determine the next question based on user's response
-//     // For example, based on the response to the occasion, you can decide the next question.
-//     // Here's a basic example:
-//     if (userMessage.includes("birthday")) {
-//       conversation.push({
-//         role: "assistant",
-//         content: "Great! Who is the recipient of the gift?",
-//       });
-//     } else if (userMessage.includes("anniversary")) {
-//       conversation.push({
-//         role: "assistant",
-//         content: "Lovely! Who is the gift for?",
-//       });
-//     } else {
-//       // Default follow-up question
-//       conversation.push({
-//         role: "assistant",
-//         content: "Please provide more details or preferences for the gift.",
-//       });
-//     }
-//   }
-
-//   return conversation;
-// };
 
 app.post("/more-questions", async (req, res) => {
   const { message } = req.body;
