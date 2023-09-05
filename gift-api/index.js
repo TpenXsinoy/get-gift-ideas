@@ -11,8 +11,6 @@ const openai = new OpenAI({
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
-
-// Modify the conversation based on user responses
 // const getConversation = (userMessage) => {
 //   const conversation = [];
 
