@@ -1,3 +1,3 @@
 # get-gift-ideas
 
-- A simple app to get gift ideas for your loved ones using AI
+- A simple POC app to get gift ideas for your loved ones using OpenAI
